@@ -38,6 +38,10 @@ a:hover{
     padding: 10px;
 }
 
-#acao{
+#acaobotao{
     display: block ;
+}
+
+#navm.ativo #menu{
+    display: flex;
 }

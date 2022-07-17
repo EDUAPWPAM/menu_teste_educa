@@ -2,13 +2,22 @@ import '../components/menu.css'
 
 
 export default function Menu (){
+    
+    
+    function toggleMenu(){
+        const navm = document.getElementById('navm')
+        navm.classList.toggle('ativo')
+    }
+    
+
     return (
+
         <div>
             
             <header id='headerm'>
             <a id='logo' href='/#'>Logo</a>
                 <nav id='navm'>
-                    <button id='acao='>menu</button>
+                    <button id='acaobotao' onClick={ toggleMenu } >menu</button>
                     <ul id='menu'>
                         <li> <a href='/'>Home</a></li>
                         <li> <a href='/'>Sobre</a></li>
