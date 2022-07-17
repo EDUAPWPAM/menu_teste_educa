@@ -28,20 +28,59 @@ a:hover{
 }
 
 #menu{
-    display:none;
+    display:block;
+    visibility: hidden;
+    overflow-y: hidden;
     list-style: none;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background:silver ;
+    height: 0px;
+    transition: .5s;
     gap: .5rem;
+    z-index: 10000;
 }
 
 #menu a{
     display:block;
     padding: 10px;
-}
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
 
-#acaobotao{
-    display: block ;
 }
 
 #navm.ativo #menu{
-    display: flex;
+    visibility: visible;
+    height: calc(40vh - 70px);
+    overflow-y: auto;
+}
+
+#acaobotao{
+    display: flex ;
+    padding: 8px 16px;
+    font-size: 16px;
+    border: none;
+    gap: 8px ;
+    background: none;
+    cursor: pointer;
+}
+
+#acaobotao:hover{
+    color: rgba(0, 0, 0, 0.302);
+}
+
+#icon{
+    cursor: pointer;
+    width: 20px;
+    border-top: 2px solid;
+}
+
+#icon::after, #icon::before{
+    content: '';
+    display: block;
+    margin-top: 5px;
+    cursor: pointer;
+    width: 20px;
+    border-top: 2px solid;
 }
