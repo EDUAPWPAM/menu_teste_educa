@@ -83,4 +83,9 @@ a:hover{
     cursor: pointer;
     width: 20px;
     border-top: 2px solid;
+    transition: .6s;
+}
+
+#navm.ativo #icon{
+    transform: rotate(-90deg);
 }
