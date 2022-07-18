@@ -28,18 +28,18 @@ a:hover{
 }
 
 #menu{
-    display:block;
+    display: block;
     visibility: hidden;
     overflow-y: hidden;
     list-style: none;
     position: absolute;
-    width: 100%;
+    width: 20%;
     top: 70px;
     right: 0px;
     background:silver ;
     height: 0px;
     transition: .5s;
-    gap: .5rem;
+    gap: 8px;
     z-index: 10000;
 }
 
@@ -52,7 +52,7 @@ a:hover{
 
 #navm.ativo #menu{
     visibility: visible;
-    height: calc(40vh - 70px);
+    height: calc(50vh - 70px);
     overflow-y: auto;
 }
 
@@ -83,7 +83,7 @@ a:hover{
     cursor: pointer;
     width: 20px;
     border-top: 2px solid;
-    transition: .1s;
+    transition: .3s;
 }
 
 #navm.ativo #icon{
@@ -93,8 +93,9 @@ a:hover{
 #navm.ativo #icon::before{
     content: '∑';
     color: aquamarine;
-    margin-top: -5px;
+    margin-top: -6px;
     border-top-color: transparent;
+    transform: rotate(360deg);
 }
 
 #navm.ativo #icon::after{
