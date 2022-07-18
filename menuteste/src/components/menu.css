@@ -83,9 +83,20 @@ a:hover{
     cursor: pointer;
     width: 20px;
     border-top: 2px solid;
-    transition: .6s;
+    transition: .1s;
 }
 
 #navm.ativo #icon{
-    transform: rotate(-90deg);
+    border-top-color: transparent;
+}
+
+#navm.ativo #icon::before{
+    content: '∑';
+    color: aquamarine;
+    margin-top: -5px;
+    border-top-color: transparent;
+}
+
+#navm.ativo #icon::after{
+    border-top-color: transparent;
 }
