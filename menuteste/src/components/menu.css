@@ -92,6 +92,7 @@ a:hover{
 
 #navm.ativo #icon::before{
     content: '∑';
+    height: 10px;
     color: aquamarine;
     margin-top: -6px;
     border-top-color: transparent;
