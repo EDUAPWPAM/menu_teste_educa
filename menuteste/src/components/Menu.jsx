@@ -1,4 +1,5 @@
 import '../components/menu.css'
+import React from 'react';
 
 
 export default function Menu (){
@@ -12,26 +13,25 @@ export default function Menu (){
 
     return (
 
+        
+
+
         <div>
             
             <header id='headerm'>
-            <a id='logo' href='/#'>Logo</a>
+                <a id='logo' href='/#'>Logo</a>
                 <nav id='navm'>
                     <button id='acaobotao' onClick={ toggleMenu } >Menu
                     <span id='icon'></span>
                     </button>
+                    
                     <ul id='menu'>
                         <li> <a href='/'>Home</a></li>
                         <li> <a href='/'>Sobre</a></li>
                         <li> <a href='/'>Matérias</a></li>
                         <li> <a href='/'>Perfil</a></li>
-                        <li> <a href='/'>Perfil</a></li>
-                        <li> <a href='/'>Perfil</a></li>
-                        <li> <a href='/'>Perfil</a></li>
-                        <li> <a href='/'>Perfil</a></li>
-                        <li> <a href='/'>Perfil</a></li>
-                        <li> <a href='/'>Perfil</a></li>
                     </ul>
+
                 </nav>
             </header>
         </div>
