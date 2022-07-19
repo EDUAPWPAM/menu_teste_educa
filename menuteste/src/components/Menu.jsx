@@ -1,6 +1,6 @@
 import '../components/menu.css'
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 
 export default function Menu (){
     
@@ -26,10 +26,22 @@ export default function Menu (){
                     </button>
                     
                     <ul id='menu'>
-                        <li> <a href='/'>Home</a></li>
-                        <li> <a href='/'>Sobre</a></li>
-                        <li> <a href='/'>Matérias</a></li>
-                        <li> <a href='/'>Perfil</a></li>
+                        <li> 
+                            <Link to="/Home">Home</Link>
+                        </li>
+
+                        <li> 
+                        <Link to="/Materias">Materias</Link>
+                        </li>
+
+                        <li> 
+                        <Link to="/Perfil">Perfil</Link>
+                        </li>
+
+                        <li> 
+                        <Link to="/Sobre">Sobre</Link>
+                        </li>
+                        
                     </ul>
 
                 </nav>
