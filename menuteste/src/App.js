@@ -7,7 +7,7 @@ import Rota from "./components/Rota";
 
 
 
-function App() {
+function App(props) {
   return (
     <div className="App">
       <Router>

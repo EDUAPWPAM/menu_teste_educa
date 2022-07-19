@@ -6,7 +6,7 @@ import Materias from "../pages/Materias";
 import Perfil from "../pages/Perfil";
 import Sobre from "../pages/Sobre";
 
-export default function Rota (){
+export default function Rota (props){
     <BrowserRouter>
         <Route path="/Home">
             <Home/>

@@ -2,7 +2,7 @@ import '../components/menu.css'
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default function Menu (){
+export default function Menu (props){
     
     
     function toggleMenu(){
