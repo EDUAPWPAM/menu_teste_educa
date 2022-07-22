@@ -2,7 +2,7 @@ import '../components/menu.css'
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default function Menu (props){
+export default function Menu (){
     
     
     function toggleMenu(){
@@ -27,19 +27,19 @@ export default function Menu (props){
                     
                     <ul id='menu'>
                         <li> 
-                            <Link to="/Home">Home</Link>
+                            <Link to="/home">Home</Link>
                         </li>
 
                         <li> 
-                        <Link to="/Materias">Materias</Link>
+                        <Link to="/materias">Materias</Link>
                         </li>
 
                         <li> 
-                        <Link to="/Perfil">Perfil</Link>
+                        <Link to="/perfil">Perfil</Link>
                         </li>
 
                         <li> 
-                        <Link to="/Sobre">Sobre</Link>
+                        <Link to="/sobre">Sobre</Link>
                         </li>
                         
                     </ul>
