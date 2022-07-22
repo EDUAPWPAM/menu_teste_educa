@@ -7,10 +7,12 @@ import Perfil from "../pages/Perfil";
 import Sobre from "../pages/Sobre";
 
 export default function Rota (){
-    <Routes>
+    return(
+        <Routes>
         <Route path='/home' element={<Home/>} />
         <Route path='/materias' element={<Materias/>} />
         <Route path='/perfil' element={<Perfil/>} />
         <Route path='/sobre' element={<Sobre/>} />
     </Routes>
+    );
 }
