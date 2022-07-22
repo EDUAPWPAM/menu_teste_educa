@@ -19,7 +19,7 @@ export default function Menu (){
         <div>
             
             <header id='headerm'>
-                <a id='logo' href='/#'>Logo</a>
+                <h1 id='logo'>∑duca</h1>
                 <nav id='navm'>
                     <button id='acaobotao' onClick={ toggleMenu } >Menu
                     <span id='icon'></span>

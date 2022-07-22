@@ -47,7 +47,7 @@ a:hover{
     display:block;
     padding: 10px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.05);
-
+    text-align: center;
 }
 
 #navm.ativo #menu{
@@ -101,4 +101,60 @@ a:hover{
 
 #navm.ativo #icon::after{
     border-top-color: transparent;
+}
+
+/*parte mobile*/
+@media (max-width: 600px){
+    #headerm {
+        background: silver;
+        box-sizing: border-box;
+        height: 70px;
+        padding: 0px;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    
+    #logo {
+        font-size: 24px;
+        font-weight: bold;
+        padding: 16px;
+    }
+    
+    #menu{
+        display: block;
+        visibility: hidden;
+        overflow-x: hidden;
+        position: absolute;
+        top: 70px;
+        left: 0px;
+        background:silver ;
+        width: 0px;
+        transition: .5s;
+        gap: 8px;
+        z-index: 10000;
+    }
+
+
+
+    #navm.ativo #menu{
+        height: calc(100vh - 70px);
+        visibility: visible;
+        width: 30vh;
+        overflow-x: auto;
+    }
+
+    #acaobotao{
+        display: flex;
+        padding: 8px 16px;
+        font-size: 16px;
+        gap: 8px ;
+        background: none;
+        cursor: pointer;
+    }
+    
+    #acaobotao:hover{
+        color: rgba(0, 0, 0, 0.302);
+    }
 }
