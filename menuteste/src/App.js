@@ -4,7 +4,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 
 import Menu from "./components/Menu";
 import Rota from "./components/Rota";
-import Home from "./pages/Home";
+
 
 
 
