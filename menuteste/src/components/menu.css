@@ -17,6 +17,12 @@ a:hover{
     font-weight: bold;
 }
 
+#logomobile {
+    font-size: 24px;
+    font-weight: bold;
+    visibility: hidden;
+}
+
 #headerm {
     background: silver;
     box-sizing: border-box;
@@ -25,6 +31,7 @@ a:hover{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: row-reverse;
 }
 
 #menu{
@@ -35,7 +42,7 @@ a:hover{
     position: absolute;
     width: 20%;
     top: 70px;
-    right: 0px;
+    left: 0px;
     background:silver ;
     height: 0px;
     transition: .5s;
@@ -103,6 +110,10 @@ a:hover{
     border-top-color: transparent;
 }
 
+
+
+
+
 /*parte mobile*/
 @media (max-width: 600px){
     #headerm {
@@ -119,6 +130,13 @@ a:hover{
     #logo {
         font-size: 24px;
         font-weight: bold;
+        visibility: hidden;
+    }
+    
+    #logomobile {
+        font-size: 24px;
+        font-weight: bold;
+        visibility: visible;
         padding: 16px;
     }
     
